@@ -1,0 +1,268 @@
+
+{
+  "status": "ok",
+  " https://newsapi.org/v2/top-headlines?country=eg&apiKey=5167789e4b1745ba9062ab58aa1521048\n": "ok",
+  "totalResults": 34,
+  "articles": [
+  {
+    "source": {
+      "id": "google-news",
+      "name": "Google News"
+    },
+    "author": "Al Masry Al Youm - المصري اليوم",
+    "title": "والد فتاة الفندق يكشف مفاجآت حول علاقتها بـ إسرائيل - Al Masry Al Youm - المصري اليوم",
+    "description": null,
+    "url": "https://news.google.com/rss/articles/CBMiMmh0dHBzOi8vd3d3LmFsbWFzcnlhbHlvdW0uY29tL25ld3MvZGV0YWlscy8zMDc3MDky0gEA?oc=5",
+    "urlToImage": null,
+    "publishedAt": "2024-01-15T11:37:00Z",
+    "content": null
+  },
+  -{
+    -"source": {
+      "id": "google-news",
+      "name": "Google News"
+    },
+    "author": "FilGoal.com",
+    "title": "أمم إفريقيا - الدرندلي: كل لاعب أدى ما عليه ضد موزمبيق ولكن حالفنا سوء توفيق - FilGoal.com",
+    "description": null,
+    "url": "https://news.google.com/rss/articles/CBMiJ2h0dHBzOi8vd3d3LmZpbGdvYWwuY29tL2FydGljbGVzLzQ3NjE2MtIBoQNodHRwczovL3d3dy5maWxnb2FsLmNvbS9hcnRpY2xlcy80NzYxNjIvYW1wLyVEOCVBMyVEOSU4NSVEOSU4NS0lRDglQTUlRDklODElRDglQjElRDklOEElRDklODIlRDklOEElRDglQTctJUQ4JUE3JUQ5JTg0JUQ4JUFGJUQ4JUIxJUQ5JTg2JUQ4JUFGJUQ5JTg0JUQ5JThBLSVEOSU4MyVEOSU4NC0lRDklODQlRDglQTclRDglQjklRDglQTgtJUQ4JUEzJUQ4JUFGJUQ5JTg5LSVEOSU4NSVEOCVBNy0lRDglQjklRDklODQlRDklOEElRDklODctJUQ4JUI2JUQ4JUFGLSVEOSU4NSVEOSU4OCVEOCVCMiVEOSU4NSVEOCVBOCVEOSU4QSVEOSU4Mi0lRDklODglRDklODQlRDklODMlRDklODYtJUQ4JUFEJUQ4JUE3JUQ5JTg0JUQ5JTgxJUQ5JTg2JUQ4JUE3LSVEOCVCMyVEOSU4OCVEOCVBMS0lRDglQUElRDklODglRDklODElRDklOEElRDklODI?oc=5",
+    "urlToImage": null,
+    "publishedAt": "2024-01-15T11:24:00Z",
+    "content": null
+  },
+  -{
+    -"source": {
+      "id": "google-news",
+      "name": "Google News"
+    },
+    "author": "Masrawy - مصراوي",
+    "title": "نقل بيومي فؤاد للمستشفى بعد تعرضه لأزمة صحية - Masrawy - مصراوي",
+    "description": null,
+    "url": "https://news.google.com/rss/articles/CBMioQJodHRwczovL3d3dy5tYXNyYXd5LmNvbS9hcnRzL3pvb20vZGV0YWlscy8yMDI0LzEvMTUvMjUyNDA5Mi8lRDklODYlRDklODIlRDklODQtJUQ4JUE4JUQ5JThBJUQ5JTg4JUQ5JTg1JUQ5JThBLSVEOSU4MSVEOCVBNCVEOCVBNyVEOCVBRi0lRDklODQlRDklODQlRDklODUlRDglQjMlRDglQUElRDglQjQlRDklODElRDklODktJUQ4JUE4JUQ4JUI5JUQ4JUFGLSVEOCVBQSVEOCVCOSVEOCVCMSVEOCVCNiVEOSU4Ny0lRDklODQlRDglQTMlRDglQjIlRDklODUlRDglQTktJUQ4JUI1JUQ4JUFEJUQ5JThBJUQ4JUE50gEA?oc=5",
+    "urlToImage": null,
+    "publishedAt": "2024-01-15T11:15:00Z",
+    "content": null
+  },
+  -{
+    -"source": {
+      "id": "google-news",
+      "name": "Google News"
+    },
+    "author": "اليوم السابع",
+    "title": "الأرصاد تكشف خرائط وفرص الأمطار المتوقعة حتى نهاية الأسبوع - اليوم السابع",
+    "description": null,
+    "url": "https://news.google.com/rss/articles/CBMi4gJodHRwczovL3d3dy55b3VtNy5jb20vc3RvcnkvMjAyNC8xLzE1LyVEOCVBNyVEOSU4NCVEOCVBMyVEOCVCMSVEOCVCNSVEOCVBNyVEOCVBRi0lRDglQUElRDklODMlRDglQjQlRDklODEtJUQ4JUFFJUQ4JUIxJUQ4JUE3JUQ4JUE2JUQ4JUI3LSVEOSU4OCVEOSU4MSVEOCVCMSVEOCVCNS0lRDglQTclRDklODQlRDglQTMlRDklODUlRDglQjclRDglQTclRDglQjEtJUQ4JUE3JUQ5JTg0JUQ5JTg1JUQ4JUFBJUQ5JTg4JUQ5JTgyJUQ4JUI5JUQ4JUE5LSVEOCVBRCVEOCVBQSVEOSU4OS0lRDklODYlRDklODclRDglQTclRDklOEElRDglQTktJUQ4JUE3JUQ5JTg0JUQ4JUEzJUQ4JUIzJUQ4JUE4JUQ5JTg4JUQ4JUI5LzY0NDc2NjPSAd4CaHR0cHM6Ly9tLnlvdW03LmNvbS9hbXAvMjAyNC8xLzE1LyVEOCVBNyVEOSU4NCVEOCVBMyVEOCVCMSVEOCVCNSVEOCVBNyVEOCVBRi0lRDglQUElRDklODMlRDglQjQlRDklODEtJUQ4JUFFJUQ4JUIxJUQ4JUE3JUQ4JUE2JUQ4JUI3LSVEOSU4OCVEOSU4MSVEOCVCMSVEOCVCNS0lRDglQTclRDklODQlRDglQTMlRDklODUlRDglQjclRDglQTclRDglQjEtJUQ4JUE3JUQ5JTg0JUQ5JTg1JUQ4JUFBJUQ5JTg4JUQ5JTgyJUQ4JUI5JUQ4JUE5LSVEOCVBRCVEOCVBQSVEOSU4OS0lRDklODYlRDklODclRDglQTclRDklOEElRDglQTktJUQ4JUE3JUQ5JTg0JUQ4JUEzJUQ4JUIzJUQ4JUE4JUQ5JTg4JUQ4JUI5LzY0NDc2NjM?oc=5",
+    "urlToImage": null,
+    "publishedAt": "2024-01-15T11:13:00Z",
+    "content": null
+  },
+  -{
+    -"source": {
+      "id": "google-news",
+      "name": "Google News"
+    },
+    "author": "السعودية نيوز",
+    "title": "يلا شوت البحرين.. مشاهدة مباراة كوريا الجنوبية والبحرين اليوم بث مباشر في كأس آسيا – السعودية نيوز - السعودية نيوز",
+    "description": null,
+    "url": "https://news.google.com/rss/articles/CBMiPWh0dHBzOi8vcHJvLmFsc2F1ZGluZXdzLmNvbS82MDUwMy9zb3V0aC1rb3JlYS12cy1iYWhyYWluLWFmYy_SAQA?oc=5",
+    "urlToImage": null,
+    "publishedAt": "2024-01-15T10:50:16Z",
+    "content": null
+  },
+  -{
+    -"source": {
+      "id": "google-news",
+      "name": "Google News"
+    },
+    "author": "أخبار الرياضة - سكاي نيوز عربية Sky News Arabia Sports",
+    "title": "وزير إسرائيلي يصف اعتقال تركيا للاعب جيهزكيل بـ\"الشائن\" - أخبار الرياضة - سكاي نيوز عربية Sky News Arabia Sports",
+    "description": null,
+    "url": "https://news.google.com/rss/articles/CBMi2QJodHRwczovL3d3dy5za3luZXdzYXJhYmlhLmNvbS9zcG9ydC8xNjg1MzQzLSVEOSU4OCVEOCVCMiVEOSU4QSVEOCVCMS0lRDglQTclRDklOTUlRDglQjMlRDglQjElRDglQTclRDklOEElRDklOTQlRDklOEElRDklODQlRDklOEEtJUQ5JThBJUQ4JUI1JUQ5JTgxLSVEOCVBNyVEOCVCOSVEOCVBQSVEOSU4MiVEOCVBNyVEOSU4NC0lRDglQUElRDglQjElRDklODMlRDklOEElRDglQTctJUQ5JTg0JUQ5JTg0JUQ4JUE3JUQ4JUI5JUQ4JUE4LSVEOCVBQyVEOSU4QSVEOSU4NyVEOCVCMiVEOSU4MyVEOSU4QSVEOSU4NC0lRDglQTglRDklODAlRDglQTclRDklODQlRDglQjQlRDglQTclRDklOEElRDklOTQlRDklODbSAd0CaHR0cHM6Ly93d3cuc2t5bmV3c2FyYWJpYS5jb20vYW1wL3Nwb3J0LzE2ODUzNDMtJUQ5JTg4JUQ4JUIyJUQ5JThBJUQ4JUIxLSVEOCVBNyVEOSU5NSVEOCVCMyVEOCVCMSVEOCVBNyVEOSU4QSVEOSU5NCVEOSU4QSVEOSU4NCVEOSU4QS0lRDklOEElRDglQjUlRDklODEtJUQ4JUE3JUQ4JUI5JUQ4JUFBJUQ5JTgyJUQ4JUE3JUQ5JTg0LSVEOCVBQSVEOCVCMSVEOSU4MyVEOSU4QSVEOCVBNy0lRDklODQlRDklODQlRDglQTclRDglQjklRDglQTgtJUQ4JUFDJUQ5JThBJUQ5JTg3JUQ4JUIyJUQ5JTgzJUQ5JThBJUQ5JTg0LSVEOCVBOCVEOSU4MCVEOCVBNyVEOSU4NCVEOCVCNCVEOCVBNyVEOSU4QSVEOSU5NCVEOSU4Ng?oc=5",
+    "urlToImage": null,
+    "publishedAt": "2024-01-15T09:26:19Z",
+    "content": null
+  },
+  -{
+    -"source": {
+      "id": "google-news",
+      "name": "Google News"
+    },
+    "author": "البوابة السعودية",
+    "title": "الأسهم الرابحة والخاسرة في السعودية بأسماء الشركات | البورصة تعلن تقرير يوم الاثنين - البوابة السعودية",
+    "description": null,
+    "url": "https://news.google.com/rss/articles/CBMiKmh0dHBzOi8vbmV3cy5zYXVkaWlnYXRlLmNvbS9uZXdzMzA2MDUuaHRtbNIBAA?oc=5",
+    "urlToImage": null,
+    "publishedAt": "2024-01-15T09:20:00Z",
+    "content": null
+  },
+  -{
+    -"source": {
+      "id": "google-news",
+      "name": "Google News"
+    },
+    "author": "اليوم السابع",
+    "title": "سعر الدولار اليوم الاثنين 15-1-2024 بالبنوك المصرية - اليوم السابع",
+    "description": null,
+    "url": "https://news.google.com/rss/articles/CBMilQJodHRwczovL3d3dy55b3VtNy5jb20vc3RvcnkvMjAyNC8xLzE1LyVEOCVCMyVEOCVCOSVEOCVCMS0lRDglQTclRDklODQlRDglQUYlRDklODglRDklODQlRDglQTclRDglQjEtJUQ4JUE3JUQ5JTg0JUQ5JThBJUQ5JTg4JUQ5JTg1LSVEOCVBNyVEOSU4NCVEOCVBNyVEOCVBQiVEOSU4NiVEOSU4QSVEOSU4Ni0xNS0xLTIwMjQtJUQ4JUE4JUQ4JUE3JUQ5JTg0JUQ4JUE4JUQ5JTg2JUQ5JTg4JUQ5JTgzLSVEOCVBNyVEOSU4NCVEOSU4NSVEOCVCNSVEOCVCMSVEOSU4QSVEOCVBOS82NDQ2MTky0gEA?oc=5",
+    "urlToImage": null,
+    "publishedAt": "2024-01-15T08:51:00Z",
+    "content": null
+  },
+  -{
+    -"source": {
+      "id": "google-news",
+      "name": "Google News"
+    },
+    "author": "Masrawy - مصراوي",
+    "title": "سعر الذهب اليوم الاثنين في مصر يرتفع مع بداية التعاملات - Masrawy - مصراوي",
+    "description": null,
+    "url": "https://news.google.com/rss/articles/CBMi4QJodHRwczovL3d3dy5tYXNyYXd5LmNvbS9uZXdzL25ld3NfZWNvbm9teS9kZXRhaWxzLzIwMjQvMS8xNS8yNTIzOTU3LyVEOCVCMyVEOCVCOSVEOCVCMS0lRDglQTclRDklODQlRDglQjAlRDklODclRDglQTgtJUQ4JUE3JUQ5JTg0JUQ5JThBJUQ5JTg4JUQ5JTg1LSVEOCVBNyVEOSU4NCVEOCVBNyVEOCVBQiVEOSU4NiVEOSU4QSVEOSU4Ni0lRDklODElRDklOEEtJUQ5JTg1JUQ4JUI1JUQ4JUIxLSVEOSU4QSVEOCVCMSVEOCVBQSVEOSU4MSVEOCVCOS0lRDklODUlRDglQjktJUQ4JUE4JUQ4JUFGJUQ4JUE3JUQ5JThBJUQ4JUE5LSVEOCVBNyVEOSU4NCVEOCVBQSVEOCVCOSVEOCVBNyVEOSU4NSVEOSU4NCVEOCVBNyVEOCVBQdIBAA?oc=5",
+    "urlToImage": null,
+    "publishedAt": "2024-01-15T08:09:00Z",
+    "content": null
+  },
+  -{
+    -"source": {
+      "id": "google-news",
+      "name": "Google News"
+    },
+    "author": "Sky News Arabia سكاي نيوز عربية",
+    "title": "مقتل 6 حوثيين و2 من حزب الله بالقصف على بالحديدة - Sky News Arabia سكاي نيوز عربية",
+    "description": null,
+    "url": "https://news.google.com/rss/articles/CBMi-wFodHRwczovL3d3dy5za3luZXdzYXJhYmlhLmNvbS9taWRkbGUtZWFzdC8xNjg1MzE3LSVEOSU4NSVEOSU4MiVEOCVBQSVEOSU4NC02LSVEOCVBRCVEOSU4OCVEOCVBQiVEOSU4QSVEOSU4QSVEOSU4Ni0lRDklODgyLSVEOCVBRCVEOCVCMiVEOCVBOC0lRDglQTclRDklODQlRDklODQlRDklODctJUQ4JUE4JUQ4JUE3JUQ5JTg0JUQ5JTgyJUQ4JUI1JUQ5JTgxLSVEOCVBOCVEOCVBNyVEOSU4NCVEOCVBRCVEOCVBRiVEOSU4QSVEOCVBRiVEOCVBOdIB_wFodHRwczovL3d3dy5za3luZXdzYXJhYmlhLmNvbS9hbXAvbWlkZGxlLWVhc3QvMTY4NTMxNy0lRDklODUlRDklODIlRDglQUElRDklODQtNi0lRDglQUQlRDklODglRDglQUIlRDklOEElRDklOEElRDklODYtJUQ5JTg4Mi0lRDglQUQlRDglQjIlRDglQTgtJUQ4JUE3JUQ5JTg0JUQ5JTg0JUQ5JTg3LSVEOCVBOCVEOCVBNyVEOSU4NCVEOSU4MiVEOCVCNSVEOSU4MS0lRDglQTglRDglQTclRDklODQlRDglQUQlRDglQUYlRDklOEElRDglQUYlRDglQTk?oc=5",
+    "urlToImage": null,
+    "publishedAt": "2024-01-15T07:48:24Z",
+    "content": null
+  },
+  -{
+    -"source": {
+      "id": "google-news",
+      "name": "Google News"
+    },
+    "author": "Sky News Arabia سكاي نيوز عربية",
+    "title": "حرب غزة.. ماذا حققت إسرائيل بعد 100 يوم من الحرب؟ - Sky News Arabia سكاي نيوز عربية",
+    "description": null,
+    "url": "https://news.google.com/rss/articles/CBMi4wFodHRwczovL3d3dy5za3luZXdzYXJhYmlhLmNvbS9taWRkbGUtZWFzdC8xNjg1MzEzLSVEOCVBRCVEOCVCMSVEOCVBOC0lRDglQkElRDglQjIlRDglQTktJUQ4JUFEJUQ5JTgyJUQ5JTgyJUQ4JUFBLSVEOCVBNyVEOSU5NSVEOCVCMyVEOCVCMSVEOCVBNyVEOSU4QSVEOSU5NCVEOSU4QSVEOSU4NC0xMDAtJUQ5JThBJUQ5JTg4JUQ5JTg1LSVEOCVBNyVEOSU4NCVEOCVBRCVEOCVCMSVEOCVBOCVEOCU5RtIB5wFodHRwczovL3d3dy5za3luZXdzYXJhYmlhLmNvbS9hbXAvbWlkZGxlLWVhc3QvMTY4NTMxMy0lRDglQUQlRDglQjElRDglQTgtJUQ4JUJBJUQ4JUIyJUQ4JUE5LSVEOCVBRCVEOSU4MiVEOSU4MiVEOCVBQS0lRDglQTclRDklOTUlRDglQjMlRDglQjElRDglQTclRDklOEElRDklOTQlRDklOEElRDklODQtMTAwLSVEOSU4QSVEOSU4OCVEOSU4NS0lRDglQTclRDklODQlRDglQUQlRDglQjElRDglQTglRDglOUY?oc=5",
+    "urlToImage": null,
+    "publishedAt": "2024-01-15T07:37:19Z",
+    "content": null
+  },
+  -{
+    -"source": {
+      "id": "google-news",
+      "name": "Google News"
+    },
+    "author": "العربية",
+    "title": "ضجة بين المصريين.. أغنيتان لنانسي وإليسا باختبار جامعي - العربية",
+    "description": null,
+    "url": "https://news.google.com/rss/articles/CBMipwNodHRwczovL3d3dy5hbGFyYWJpeWEubmV0L2FyYWItYW5kLXdvcmxkL2VneXB0LzIwMjQvMDEvMTUvJUQ4JUI2JUQ4JUFDJUQ4JUE5LSVEOCVCOSVEOSU4NCVEOSU4OS0lRDglQTclRDklODQlRDglQjMlRDklODglRDglQjQlRDklOEElRDglQTclRDklODQtJUQ5JTg1JUQ5JThBJUQ4JUFGJUQ5JThBJUQ4JUE3LSVEOCVBMyVEOCVCQSVEOSU4NiVEOSU4QSVEOCVBQSVEOCVBNyVEOSU4Ni0lRDklODQlRDklODYlRDglQTclRDklODYlRDglQjMlRDklOEEtJUQ4JUI5JUQ4JUFDJUQ4JUIxJUQ5JTg1LSVEOSU4OCVEOCVBNyVEOSU4NCVEOSU4QSVEOCVCMyVEOCVBNy0lRDglQTglRDglQTclRDglQUUlRDglQUElRDglQTglRDglQTclRDglQjEtJUQ4JUFDJUQ4JUE3JUQ5JTg1JUQ4JUI5JUQ4JUE5LSVEOSU4NSVEOCVCNSVEOCVCMSVEOSU4QSVEOCVBOS3SAasDaHR0cHM6Ly93d3cuYWxhcmFiaXlhLm5ldC9hbXAvYXJhYi1hbmQtd29ybGQvZWd5cHQvMjAyNC8wMS8xNS8lRDglQjYlRDglQUMlRDglQTktJUQ4JUI5JUQ5JTg0JUQ5JTg5LSVEOCVBNyVEOSU4NCVEOCVCMyVEOSU4OCVEOCVCNCVEOSU4QSVEOCVBNyVEOSU4NC0lRDklODUlRDklOEElRDglQUYlRDklOEElRDglQTctJUQ4JUEzJUQ4JUJBJUQ5JTg2JUQ5JThBJUQ4JUFBJUQ4JUE3JUQ5JTg2LSVEOSU4NCVEOSU4NiVEOCVBNyVEOSU4NiVEOCVCMyVEOSU4QS0lRDglQjklRDglQUMlRDglQjElRDklODUtJUQ5JTg4JUQ4JUE3JUQ5JTg0JUQ5JThBJUQ4JUIzJUQ4JUE3LSVEOCVBOCVEOCVBNyVEOCVBRSVEOCVBQSVEOCVBOCVEOCVBNyVEOCVCMS0lRDglQUMlRDglQTclRDklODUlRDglQjklRDglQTktJUQ5JTg1JUQ4JUI1JUQ4JUIxJUQ5JThBJUQ4JUE5LQ?oc=5",
+    "urlToImage": null,
+    "publishedAt": "2024-01-15T07:34:32Z",
+    "content": null
+  },
+  -{
+    -"source": {
+      "id": "google-news",
+      "name": "Google News"
+    },
+    "author": "Sada El-Bald صدى البلد",
+    "title": "فستان بدون بطانة.. سيرين عبدالنور تتصدر التريند بهذه الإطلالة - Sada El-Bald صدى البلد",
+    "description": null,
+    "url": "https://news.google.com/rss/articles/CBMiIGh0dHBzOi8vd3d3LmVsYmFsYWQubmV3cy82MDc0MDk50gEA?oc=5",
+    "urlToImage": null,
+    "publishedAt": "2024-01-15T07:15:00Z",
+    "content": null
+  },
+  -{
+    -"source": {
+      "id": "google-news",
+      "name": "Google News"
+    },
+    "author": "الحرة",
+    "title": "معززة بالذكاء الاصطناعي.. تسريبات بشأن هواتف \"غالاكسي\" المنتظرة - الحرة",
+    "description": null,
+    "url": "https://news.google.com/rss/articles/CBMizgJodHRwczovL3d3dy5hbGh1cnJhLmNvbS90ZWNoLzIwMjQvMDEvMTUvJUQ5JTg1JUQ4JUI5JUQ4JUIyJUQ4JUIyJUQ4JUE5LSVEOCVBOCVEOCVBNyVEOSU4NCVEOCVCMCVEOSU4MyVEOCVBNyVEOCVBMS0lRDglQTclRDklODQlRDglQTclRDglQjUlRDglQjclRDklODYlRDglQTclRDglQjklRDklOEEtJUQ4JUFBJUQ4JUIzJUQ4JUIxJUQ5JThBJUQ4JUE4JUQ4JUE3JUQ4JUFBLSVEOSU4NyVEOSU4OCVEOCVBNyVEOCVBQSVEOSU4MS0lRDglQkElRDglQTclRDklODQlRDglQTclRDklODMlRDglQjMlRDklOEEtJUQ4JUE3JUQ5JTg0JUQ5JTg1JUQ5JTg2JUQ4JUFBJUQ4JUI4JUQ4JUIxJUQ4JUE50gHSAmh0dHBzOi8vd3d3LmFsaHVycmEuY29tL3RlY2gvMjAyNC8wMS8xNS8lRDklODUlRDglQjklRDglQjIlRDglQjIlRDglQTktJUQ4JUE4JUQ4JUE3JUQ5JTg0JUQ4JUIwJUQ5JTgzJUQ4JUE3JUQ4JUExLSVEOCVBNyVEOSU4NCVEOCVBNyVEOCVCNSVEOCVCNyVEOSU4NiVEOCVBNyVEOCVCOSVEOSU4QS0lRDglQUElRDglQjMlRDglQjElRDklOEElRDglQTglRDglQTclRDglQUEtJUQ5JTg3JUQ5JTg4JUQ4JUE3JUQ4JUFBJUQ5JTgxLSVEOCVCQSVEOCVBNyVEOSU4NCVEOCVBNyVEOSU4MyVEOCVCMyVEOSU4QS0lRDglQTclRDklODQlRDklODUlRDklODYlRDglQUElRDglQjglRDglQjElRDglQTk_YW1w?oc=5",
+    "urlToImage": null,
+    "publishedAt": "2024-01-15T06:26:23Z",
+    "content": null
+  },
+  -{
+    -"source": {
+      "id": "google-news",
+      "name": "Google News"
+    },
+    "author": "اليوم السابع",
+    "title": "منتخب الجزائر يتحدى غزلان أنجولا الليلة فى كأس الأمم الأفريقية - اليوم السابع",
+    "description": null,
+    "url": "https://news.google.com/rss/articles/CBMi9QJodHRwczovL3d3dy55b3VtNy5jb20vc3RvcnkvMjAyNC8xLzE1LyVEOSU4NSVEOSU4NiVEOCVBQSVEOCVBRSVEOCVBOC0lRDglQTclRDklODQlRDglQUMlRDglQjIlRDglQTclRDglQTYlRDglQjEtJUQ5JThBJUQ4JUFBJUQ4JUFEJUQ4JUFGJUQ5JTg5LSVEOCVCQSVEOCVCMiVEOSU4NCVEOCVBNyVEOSU4Ni0lRDglQTMlRDklODYlRDglQUMlRDklODglRDklODQlRDglQTctJUQ4JUE3JUQ5JTg0JUQ5JTg0JUQ5JThBJUQ5JTg0JUQ4JUE5LSVEOSU4MSVEOSU4OS0lRDklODMlRDglQTMlRDglQjMtJUQ4JUE3JUQ5JTg0JUQ4JUEzJUQ5JTg1JUQ5JTg1LSVEOCVBNyVEOSU4NCVEOCVBMyVEOSU4MSVEOCVCMSVEOSU4QSVEOSU4MiVEOSU4QSVEOCVBOS82NDQ2MDYw0gHxAmh0dHBzOi8vbS55b3VtNy5jb20vYW1wLzIwMjQvMS8xNS8lRDklODUlRDklODYlRDglQUElRDglQUUlRDglQTgtJUQ4JUE3JUQ5JTg0JUQ4JUFDJUQ4JUIyJUQ4JUE3JUQ4JUE2JUQ4JUIxLSVEOSU4QSVEOCVBQSVEOCVBRCVEOCVBRiVEOSU4OS0lRDglQkElRDglQjIlRDklODQlRDglQTclRDklODYtJUQ4JUEzJUQ5JTg2JUQ4JUFDJUQ5JTg4JUQ5JTg0JUQ4JUE3LSVEOCVBNyVEOSU4NCVEOSU4NCVEOSU4QSVEOSU4NCVEOCVBOS0lRDklODElRDklODktJUQ5JTgzJUQ4JUEzJUQ4JUIzLSVEOCVBNyVEOSU4NCVEOCVBMyVEOSU4NSVEOSU4NS0lRDglQTclRDklODQlRDglQTMlRDklODElRDglQjElRDklOEElRDklODIlRDklOEElRDglQTkvNjQ0NjA2MA?oc=5",
+    "urlToImage": null,
+    "publishedAt": "2024-01-15T06:00:00Z",
+    "content": null
+  },
+  -{
+    -"source": {
+      "id": "google-news",
+      "name": "Google News"
+    },
+    "author": "الحرة",
+    "title": "صيحات استهجان تقاطع خطاب الرئيس الإسرائيلي بشأن الرهائن المختطفين - الحرة",
+    "description": null,
+    "url": "https://news.google.com/rss/articles/CBMi7wJodHRwczovL3d3dy5hbGh1cnJhLmNvbS9pc3JhZWwvMjAyNC8wMS8xNS8lRDglQjUlRDklOEElRDglQUQlRDglQTclRDglQUEtJUQ4JUE3JUQ4JUIzJUQ4JUFBJUQ5JTg3JUQ4JUFDJUQ4JUE3JUQ5JTg2LSVEOCVBQSVEOSU4MiVEOCVBNyVEOCVCNyVEOCVCOS0lRDglQUUlRDglQjclRDglQTclRDglQTgtJUQ4JUE3JUQ5JTg0JUQ4JUIxJUQ4JUE2JUQ5JThBJUQ4JUIzLSVEOCVBNyVEOSU4NCVEOCVBNSVEOCVCMyVEOCVCMSVEOCVBNyVEOCVBNiVEOSU4QSVEOSU4NCVEOSU4QS0lRDglQTclRDklODQlRDglQjElRDklODclRDglQTclRDglQTYlRDklODYtJUQ4JUE3JUQ5JTg0JUQ5JTg1JUQ4JUFFJUQ4JUFBJUQ4JUI3JUQ5JTgxJUQ5JThBJUQ5JTg20gHzAmh0dHBzOi8vd3d3LmFsaHVycmEuY29tL2lzcmFlbC8yMDI0LzAxLzE1LyVEOCVCNSVEOSU4QSVEOCVBRCVEOCVBNyVEOCVBQS0lRDglQTclRDglQjMlRDglQUElRDklODclRDglQUMlRDglQTclRDklODYtJUQ4JUFBJUQ5JTgyJUQ4JUE3JUQ4JUI3JUQ4JUI5LSVEOCVBRSVEOCVCNyVEOCVBNyVEOCVBOC0lRDglQTclRDklODQlRDglQjElRDglQTYlRDklOEElRDglQjMtJUQ4JUE3JUQ5JTg0JUQ4JUE1JUQ4JUIzJUQ4JUIxJUQ4JUE3JUQ4JUE2JUQ5JThBJUQ5JTg0JUQ5JThBLSVEOCVBNyVEOSU4NCVEOCVCMSVEOSU4NyVEOCVBNyVEOCVBNiVEOSU4Ni0lRDglQTclRDklODQlRDklODUlRDglQUUlRDglQUElRDglQjclRDklODElRDklOEElRDklODY_YW1w?oc=5",
+    "urlToImage": null,
+    "publishedAt": "2024-01-15T04:25:07Z",
+    "content": null
+  },
+  -{
+    -"source": {
+      "id": "google-news",
+      "name": "Google News"
+    },
+    "author": "العربية",
+    "title": "حتى لو قضيتم نحبكم.. شاهد ترامب يوجه رسالة نارية لناخبيه - العربية",
+    "description": null,
+    "url": "https://news.google.com/rss/articles/CBMi4wJodHRwczovL3d3dy5hbGFyYWJpeWEubmV0L2FyYWItYW5kLXdvcmxkL2FtZXJpY2FuLWVsZWN0aW9ucy0yMDE2LzIwMjQvMDEvMTUvJUQ4JUFEJUQ4JUFBJUQ5JTg5LSVEOSU4NCVEOSU4OC0lRDklODIlRDglQjYlRDklOEElRDglQUElRDklODUtJUQ5JTg2JUQ4JUFEJUQ4JUE4JUQ5JTgzJUQ5JTg1LSVEOCVCNCVEOCVBNyVEOSU4NyVEOCVBRi0lRDglQUElRDglQjElRDglQTclRDklODUlRDglQTgtJUQ5JThBJUQ5JTg4JUQ4JUFDJUQ5JTg3LSVEOCVCMSVEOCVCMyVEOCVBNyVEOSU4NCVEOCVBOS0lRDklODYlRDglQTclRDglQjElRDklOEElRDglQTktJUQ5JTg0JUQ5JTg2JUQ4JUE3JUQ4JUFFJUQ4JUE4JUQ5JThBJUQ5JTg30gHnAmh0dHBzOi8vd3d3LmFsYXJhYml5YS5uZXQvYW1wL2FyYWItYW5kLXdvcmxkL2FtZXJpY2FuLWVsZWN0aW9ucy0yMDE2LzIwMjQvMDEvMTUvJUQ4JUFEJUQ4JUFBJUQ5JTg5LSVEOSU4NCVEOSU4OC0lRDklODIlRDglQjYlRDklOEElRDglQUElRDklODUtJUQ5JTg2JUQ4JUFEJUQ4JUE4JUQ5JTgzJUQ5JTg1LSVEOCVCNCVEOCVBNyVEOSU4NyVEOCVBRi0lRDglQUElRDglQjElRDglQTclRDklODUlRDglQTgtJUQ5JThBJUQ5JTg4JUQ4JUFDJUQ5JTg3LSVEOCVCMSVEOCVCMyVEOCVBNyVEOSU4NCVEOCVBOS0lRDklODYlRDglQTclRDglQjElRDklOEElRDglQTktJUQ5JTg0JUQ5JTg2JUQ4JUE3JUQ4JUFFJUQ4JUE4JUQ5JThBJUQ5JTg3?oc=5",
+    "urlToImage": null,
+    "publishedAt": "2024-01-15T04:01:00Z",
+    "content": null
+  },
+  -{
+    -"source": {
+      "id": "google-news",
+      "name": "Google News"
+    },
+    "author": "CNN Arabic",
+    "title": "أمريكا: إسقاط صاروخ أطلق من منطقة يسيطر عليها الحوثيون - CNN Arabic",
+    "description": null,
+    "url": "https://news.google.com/rss/articles/CBMiggFodHRwczovL2FyYWJpYy5jbm4uY29tL21pZGRsZS1lYXN0L2FydGljbGUvMjAyNC8wMS8xNS91cy1zaG9vdHMtZG93bi1hbnRpLXNoaXAtY3J1aXNlLW1pc3NpbGUtZnJvbS1ob3V0aGktY29udHJvbGxlZC1hcmVhLW9mLXllbWVu0gGKAWh0dHBzOi8vYXJhYmljLmNubi5jb20vYW1waHRtbC9taWRkbGUtZWFzdC9hcnRpY2xlLzIwMjQvMDEvMTUvdXMtc2hvb3RzLWRvd24tYW50aS1zaGlwLWNydWlzZS1taXNzaWxlLWZyb20taG91dGhpLWNvbnRyb2xsZWQtYXJlYS1vZi15ZW1lbg?oc=5",
+    "urlToImage": null,
+    "publishedAt": "2024-01-15T02:11:17Z",
+    "content": null
+  },
+  -{
+    -"source": {
+      "id": "google-news",
+      "name": "Google News"
+    },
+    "author": "Sky News Arabia سكاي نيوز عربية",
+    "title": "حكومة إسرائيل تستعد للتصويت على \"ميزانية الحرب\" لعام 2024 - Sky News Arabia سكاي نيوز عربية",
+    "description": null,
+    "url": "https://news.google.com/rss/articles/CBMiuQJodHRwczovL3d3dy5za3luZXdzYXJhYmlhLmNvbS9taWRkbGUtZWFzdC8xNjg1MjI5LSVEOCVBRCVEOSU4MyVEOSU4OCVEOSU4NSVEOCVBOS0lRDglQTclRDklOTUlRDglQjMlRDglQjElRDglQTclRDklOEElRDklOTQlRDklOEElRDklODQtJUQ4JUFBJUQ4JUIzJUQ4JUFBJUQ4JUI5JUQ4JUFGLSVEOSU4NCVEOSU4NCVEOCVBQSVEOCVCNSVEOSU4OCVEOSU4QSVEOCVBQS0lRDklODUlRDklOEElRDglQjIlRDglQTclRDklODYlRDklOEElRDglQTktJUQ4JUE3JUQ5JTg0JUQ4JUFEJUQ4JUIxJUQ4JUE4LSVEOSU4NCVEOCVCOSVEOCVBNyVEOSU4NS0yMDI00gG9Amh0dHBzOi8vd3d3LnNreW5ld3NhcmFiaWEuY29tL2FtcC9taWRkbGUtZWFzdC8xNjg1MjI5LSVEOCVBRCVEOSU4MyVEOSU4OCVEOSU4NSVEOCVBOS0lRDglQTclRDklOTUlRDglQjMlRDglQjElRDglQTclRDklOEElRDklOTQlRDklOEElRDklODQtJUQ4JUFBJUQ4JUIzJUQ4JUFBJUQ4JUI5JUQ4JUFGLSVEOSU4NCVEOSU4NCVEOCVBQSVEOCVCNSVEOSU4OCVEOSU4QSVEOCVBQS0lRDklODUlRDklOEElRDglQjIlRDglQTclRDklODYlRDklOEElRDglQTktJUQ4JUE3JUQ5JTg0JUQ4JUFEJUQ4JUIxJUQ4JUE4LSVEOSU4NCVEOCVCOSVEOCVBNyVEOSU4NS0yMDI0?oc=5",
+    "urlToImage": null,
+    "publishedAt": "2024-01-15T01:28:17Z",
+    "content": null
+  },
+  -{
+    -"source": {
+      "id": "google-news",
+      "name": "Google News"
+    },
+    "author": "الحرة",
+    "title": "مصر والصين تطالبان بوقف للنار في غزة وإقامة دولة فلسطينية - الحرة",
+    "description": null,
+    "url": "https://news.google.com/rss/articles/CBMi5QJodHRwczovL3d3dy5hbGh1cnJhLmNvbS9hcmFiaWMtYW5kLWludGVybmF0aW9uYWwvMjAyNC8wMS8xNS8lRDklODUlRDglQjUlRDglQjEtJUQ5JTg4JUQ4JUE3JUQ5JTg0JUQ4JUI1JUQ5JThBJUQ5JTg2LSVEOCVBQSVEOCVCNyVEOCVBNyVEOSU4NCVEOCVBOCVEOCVBNyVEOSU4Ni0lRDglQTglRDklODglRDklODIlRDklODEtJUQ5JTg0JUQ5JTg0JUQ5JTg2JUQ4JUE3JUQ4JUIxLSVEOSU4MSVEOSU4QS0lRDglQkElRDglQjIlRDglQTktJUQ5JTg4JUQ4JUE1JUQ5JTgyJUQ4JUE3JUQ5JTg1JUQ4JUE5LSVEOCVBRiVEOSU4OCVEOSU4NCVEOCVBOS0lRDklODElRDklODQlRDglQjMlRDglQjclRDklOEElRDklODYlRDklOEElRDglQTnSAekCaHR0cHM6Ly93d3cuYWxodXJyYS5jb20vYXJhYmljLWFuZC1pbnRlcm5hdGlvbmFsLzIwMjQvMDEvMTUvJUQ5JTg1JUQ4JUI1JUQ4JUIxLSVEOSU4OCVEOCVBNyVEOSU4NCVEOCVCNSVEOSU4QSVEOSU4Ni0lRDglQUElRDglQjclRDglQTclRDklODQlRDglQTglRDglQTclRDklODYtJUQ4JUE4JUQ5JTg4JUQ5JTgyJUQ5JTgxLSVEOSU4NCVEOSU4NCVEOSU4NiVEOCVBNyVEOCVCMS0lRDklODElRDklOEEtJUQ4JUJBJUQ4JUIyJUQ4JUE5LSVEOSU4OCVEOCVBNSVEOSU4MiVEOCVBNyVEOSU4NSVEOCVBOS0lRDglQUYlRDklODglRDklODQlRDglQTktJUQ5JTgxJUQ5JTg0JUQ4JUIzJUQ4JUI3JUQ5JThBJUQ5JTg2JUQ5JThBJUQ4JUE5P2FtcA?oc=5",
+    "urlToImage": null,
+    "publishedAt": "2024-01-15T00:04:46Z",
+    "content": null
+  }
+]
+}
