@@ -14,7 +14,6 @@ class Search extends StatelessWidget {
         builder: (context, state) {
           CubitClass cubitClass = CubitClass.get(context);
           List<dynamic>? list = cubitClass.mySearch;
-          TextEditingController searchWordCo = TextEditingController();
           return Scaffold(
             appBar: AppBar(
               title: Text('Search a news'),

@@ -4,13 +4,6 @@ class InitialStat extends AppState {}
 
 class BottomBarState extends AppState {}
 
-class IsBelgiumSubmitted extends AppState {}
-class IsGermanySubmitted extends AppState {}
-class IsNetherlandsSubmitted extends AppState {}
-class IsUSASubmitted extends AppState {}
-class IsEgyptSubmitted extends AppState {}
-class IsFlagChosen extends AppState {}
-
 class GetBusinessData extends AppState {}
 
 class GettingBusinessData extends AppState {}

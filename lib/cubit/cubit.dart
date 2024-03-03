@@ -1,9 +1,5 @@
-import 'dart:ui';
-
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:untitled3/cubit/states.dart';
 import 'package:untitled3/network/dio.dart';
@@ -23,9 +19,9 @@ class CubitClass extends Cubit<AppState> {
   IconData brightnessIconLight = Icons.brightness_2_outlined;
   IconData brightnessIconDark = Icons.brightness_2;
   IconData brightnessIcon = Icons.brightness_2_outlined;
+
   bool isBrightness = true;
   Color fontColor = Colors.black;
-  bool? isSubmitted;
 
   ThemeMode modDark = ThemeMode.dark;
   ThemeMode modLight = ThemeMode.light;
@@ -36,11 +32,6 @@ class CubitClass extends Cubit<AppState> {
     emit(BottomBarState());
   }
 
-  // changFlag(int index) {
-  //   flagNum = index;
-  //   emit(ChangeFlag());
-  // }
-
   changeBrightnessIcon(IconData? brightnessIcon) {
     isBrightness
         ? brightnessIcon = brightnessIconDark
@@ -48,15 +39,6 @@ class CubitClass extends Cubit<AppState> {
     emit(ChangeBrightnessIcon());
     return brightnessIcon;
   }
-  // bool ? isPressed = false ;
-  // IconData? chosedFlag = CupertinoIcons.circle;
-  // IconData? chosedFlagSign(IconData? chosedFlag) {
-  //    isPressed!
-  //   ? chosedFlag = Icons.circle
-  //       : chosedFlag = CupertinoIcons.circle;
-  //   emit(ChangeBrightnessIcon());
-  //   return chosedFlag;
-  // }
 
   changeFontColor() {
     isBrightness ? fontColor = Colors.white : fontColor = Colors.black;
@@ -92,6 +74,10 @@ class CubitClass extends Cubit<AppState> {
     return mod;
   }
 
+  // WebViewController controller(String url) {
+  //   return WebViewController()..loadRequest(Uri.parse(url));
+  // }
+
   List<dynamic>? myBusiness = [];
   List<dynamic>? myScience = [];
   List<dynamic>? mySport = [];
@@ -110,76 +96,6 @@ class CubitClass extends Cubit<AppState> {
     const Technology(),
     const Entertainment(),
   ];
-
-  // bool? isBelgiumSub = false;
-  //
-  // bool? isGermanySub = false;
-  // bool? isNetherlandsSub = false;
-  //
-  // bool? isUsaSub = false;
-  //
-  // bool? isEgyptSub = false;
-  //
-  // isBelgiumSubmitted() {
-  //   isBelgiumSub = true;
-  //   isGermanySub = false;
-  //   isNetherlandsSub = false;
-  //   isUsaSub = false;
-  //   isEgyptSub = false;
-  //   emit(IsBelgiumSubmitted());
-  //   print('isBelgiumSub: $isBelgiumSub');
-  //   print('isGermanySub: $isGermanySub');
-  //   print('isNetherlandsSub: $isNetherlandsSub');
-  //   print('isUsaSub: $isUsaSub');
-  //   print('isEgyptSub: $isEgyptSub');
-  // }
-  //
-  // isGermanySubmitted() {
-  //   isBelgiumSub = false;
-  //   isGermanySub = true;
-  //   isNetherlandsSub = false;
-  //   isUsaSub = false;
-  //   isEgyptSub = false;
-  //   emit(IsGermanySubmitted());
-  // }
-  //
-  // isNetherlandsSubmitted() {
-  //   isBelgiumSub = false;
-  //   isGermanySub = false;
-  //   isNetherlandsSub = true;
-  //   isUsaSub = false;
-  //   isEgyptSub = false;
-  //   emit(IsNetherlandsSubmitted());
-  // }
-  //
-  // isUsaSubmitted() {
-  //   isBelgiumSub = false;
-  //   emit(IsBelgiumSubmitted());
-  //   isGermanySub = false;
-  //   emit(IsGermanySubmitted());
-  //   isNetherlandsSub = false;
-  //   emit(IsNetherlandsSubmitted());
-  //   isUsaSub = true;
-  //   emit(IsUSASubmitted());
-  //   isEgyptSub = false;
-  //   emit(IsEgyptSubmitted());
-  // }
-  //
-  // isEgyptSubmitted() {
-  //   isBelgiumSub = false;
-  //   isGermanySub = false;
-  //   isNetherlandsSub = false;
-  //   isUsaSub = false;
-  //   isEgyptSub = true;
-  //   emit(IsEgyptSubmitted());
-  // }
-  //
-  // Color isFlagChosen(bool isChosen) {
-  //   Color backgroundColor = isChosen ? Colors.blue : Colors.grey;
-  //   emit(IsFlagChosen());
-  //   return backgroundColor;
-  //
-  // }
 
   List<BottomNavigationBarItem> items = [
     const BottomNavigationBarItem(
