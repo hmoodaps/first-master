@@ -5,6 +5,7 @@ import '../components/components.dart';
 import '../cubit/cubit.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../cubit/states.dart';
+import '../network/shared_preferencers.dart';
 
 class FlagMenu extends StatelessWidget {
   const FlagMenu({Key? key});
@@ -22,9 +23,9 @@ class FlagMenu extends StatelessWidget {
             await showPopover(
               context: context,
               bodyBuilder: (context) => bodyBuilder(context),
-              backgroundColor: cub.isBrightness ? Colors.grey : Colors.white,
+              backgroundColor: Save.getBoolData('key')! ? Colors.grey : Colors.white,
               width: 200,
-              height: 260,
+              height: 225,
             );
 
           },

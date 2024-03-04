@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:conditional_builder_null_safety/conditional_builder_null_safety.dart';
 import 'package:untitled3/cubit/cubit.dart';
+import 'package:untitled3/main.dart';
+import 'package:untitled3/network/shared_preferencers.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 Widget itemBuilder(context, int index, List<dynamic>? list) {
@@ -156,6 +158,9 @@ Widget bodyBuilder(context) {
     children: [
       flagBuilder(context, 'assets/belgium.png', 'Belgium'),
       flagBuilder(context, 'assets/egypt.png', 'Egypt'),
+      flagBuilder(context, 'assets/netherlands.png', 'Netherlands'),
+      flagBuilder(context, 'assets/germany.png', 'Germany'),
+      flagBuilder(context, 'assets/usa.png', 'USA'),
     ],
   );
 }
@@ -166,27 +171,32 @@ Widget flagBuilder(context, String pathToImage, String countryName) {
     children: [
       GestureDetector(
         onTap: () {
-          cub.pathToImage = pathToImage;
-          cub.country = countryName;
+          Save.setStringData('pathToImage', pathToImage);
+          cub.pathToImage = Save.getStringData('pathToImage')!;
+          Save.setStringData('countryName', countryName);
+          cub.country = Save.getStringData('countryName')!;
           Navigator.pop(context);
+          Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const MyApp(),));
         },
         child: Row(
           children: [
             CircleAvatar(
-              radius: 10,
-              backgroundImage: AssetImage(pathToImage),
-              backgroundColor: Colors.transparent,
-              child: const CircleAvatar(
-                radius: 10,
+            radius: 15,
+            backgroundColor: Colors.transparent,
+              child: CircleAvatar(
+                radius: 15,
+                backgroundImage: AssetImage(pathToImage),
                 backgroundColor: Colors.transparent,
               ),
-            ),
+          ),
             const SizedBox(width: 10,),
-            Text(countryName,style: const TextStyle(fontSize: 18),)
+            SizedBox(width : 157 ,child: Text(countryName,style: const TextStyle(fontSize: 18),))
           ],
         ),
       ),
-      const Divider(height: 1,thickness: 1,color: Colors.black, endIndent: 200,indent: 200,)
+      const SizedBox(height: 7,),
+      const Divider(height: 1,thickness: 1,color: Colors.black,),
+      const SizedBox(height: 7,),
     ],
   );
 }

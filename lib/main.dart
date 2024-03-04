@@ -3,16 +3,21 @@ import 'package:flutter/services.dart';
 import 'package:untitled3/network/dio.dart';
 import 'package:untitled3/home/home_screen.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:untitled3/network/shared_preferencers.dart';
 import 'cubit/cubit.dart';
 import 'cubit/states.dart';
 
-void main() {
+void main() async{
+  WidgetsFlutterBinding.ensureInitialized();
   DioHelper.init();
-  runApp(const MyApp());
+  await Save.init();
+
+
+  runApp( const MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+   const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +29,10 @@ class MyApp extends StatelessWidget {
           ..getNewsHealthData()
           ..getNewsTechnologyData()
           ..getNewsEntertainmentData()
-          ..getNewsBusinessData(),
+          ..getNewsBusinessData()
+           ..apis('1915e6109adc4f3a8e4e7246b07dd028','39c145edf6cb4a608c058a17afe26e60',
+               'b9269ed1c6d8495c9fe0b8c701b51c6b','1915e6109adc4f3a8e4e7246b07dd028',
+               '1915e6109adc4f3a8e4e7246b07dd028','5167789e4b1745ba9062ab58aa152104'),
         // {
         //   CubitClass cubit = CubitClass();
         //   cubit.getNewsSportData();

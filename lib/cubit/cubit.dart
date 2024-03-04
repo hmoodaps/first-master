@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:untitled3/cubit/states.dart';
 import 'package:untitled3/network/dio.dart';
+import 'package:untitled3/network/shared_preferencers.dart';
 import '../screens/business.dart';
 import '../screens/entertainment.dart';
 import '../screens/health.dart';
@@ -20,12 +21,20 @@ class CubitClass extends Cubit<AppState> {
   IconData brightnessIconDark = Icons.brightness_2;
   IconData brightnessIcon = Icons.brightness_2_outlined;
 
-  bool isBrightness = true;
+  bool isBrightness = false ;
   Color fontColor = Colors.black;
 
   ThemeMode modDark = ThemeMode.dark;
   ThemeMode modLight = ThemeMode.light;
   ThemeMode mod = ThemeMode.dark;
+  apis(String api1,String api2,String api3,String api4,String api5,String api6,)async{
+    await Save.setStringData('belgiumAPI', api1);
+    await Save.setStringData('egyptAPI', api2);
+    await Save.setStringData('germanyAPI', api3);
+    await Save.setStringData('netherlandsAPI', api4);
+    await Save.setStringData('usaAPI', api5);
+    await Save.setStringData('defaultApiKey', api6);
+  }
 
   changeBottomBar(int index) {
     currentIndex = index;
@@ -33,7 +42,7 @@ class CubitClass extends Cubit<AppState> {
   }
 
   changeBrightnessIcon(IconData? brightnessIcon) {
-    isBrightness
+    Save.getBoolData('key')!
         ? brightnessIcon = brightnessIconDark
         : brightnessIcon = brightnessIconLight;
     emit(ChangeBrightnessIcon());
@@ -41,7 +50,7 @@ class CubitClass extends Cubit<AppState> {
   }
 
   changeFontColor() {
-    isBrightness ? fontColor = Colors.white : fontColor = Colors.black;
+    Save.getBoolData('key')! ? fontColor = Colors.white : fontColor = Colors.black;
     emit(ChangeFontColor());
     return fontColor;
   }
@@ -49,7 +58,7 @@ class CubitClass extends Cubit<AppState> {
   Color? iconColor;
 
   changeIconsColor() {
-    isBrightness ? iconColor = Colors.black : iconColor = Colors.white;
+    Save.getBoolData('key')! ? iconColor = Colors.black : iconColor = Colors.white;
     emit(ChangeIconsColor());
     return iconColor;
   }
@@ -57,24 +66,35 @@ class CubitClass extends Cubit<AppState> {
   Color? fieldColor;
 
   changeFieldsColor() {
-    isBrightness ? fieldColor = Colors.white : fieldColor = Colors.black;
+    Save.getBoolData('key')! ? fieldColor = Colors.white : fieldColor = Colors.black;
     emit(ChangeFieldsColor());
     return fieldColor;
   }
 
   changeFieldsBorderAndColor() {
-    isBrightness ? fieldColor = Colors.red : fieldColor = Colors.orange;
+    Save.getBoolData('key')! ? fieldColor = Colors.red : fieldColor = Colors.orange;
     emit(ChangeFieldsBorderAndColor());
     return fieldColor;
   }
 
   changeDarkAndLightMod() {
-    isBrightness ? mod = modDark : mod = modLight;
+    Save.getBoolData('key')! ? mod = modDark : mod = modLight;
     emit(ChangeBrightnessMod());
     return mod;
   }
+  CircleAvatar ? flag;
   changFlag(){
-
+    flag = CircleAvatar(
+      radius: 20,
+      backgroundColor: Colors.transparent,
+      child: CircleAvatar(
+        radius: 20,
+        backgroundImage: AssetImage(Save.getStringData('pathToImage')!=null ? Save.getStringData('pathToImage')! : pathToImage ),
+        backgroundColor: Colors.transparent,
+      ),
+    );
+    emit(ChangFlag());
+    return flag ;
   }
 
   // WebViewController controller(String url) {
@@ -99,7 +119,7 @@ class CubitClass extends Cubit<AppState> {
     const Technology(),
     const Entertainment(),
   ];
-  String ? pathToImage ;
+  String  pathToImage = Save.getStringData('pathToImage')!=null ? Save.getStringData('pathToImage')! : 'assets/netherlands.png';
 
   List<BottomNavigationBarItem> items = [
     const BottomNavigationBarItem(
@@ -128,33 +148,34 @@ class CubitClass extends Cubit<AppState> {
     ),
   ];
   String? apiKey;
+  String defaultApiKey = Save.getStringData('pathToImage') == null ? Save.getStringData('defaultApikey')! : '928a12e71c184dc8b8cfb085cb16e7ed';
+
   String apiKeys() {
-    emit(ChangApi());
-    switch (pathToImage) {
+    switch (Save.getStringData('pathToImage')) {
       case 'assets/belgium.png':
-        apiKey = '1915e6109adc4f3a8e4e7246b07dd028';
+        apiKey = Save.getStringData('belgiumAPI');
         break;
       case 'assets/egypt.png':
-        apiKey = '39c145edf6cb4a608c058a17afe26e60';
+        apiKey = Save.getStringData('egyptAPI');
         break;
       case 'assets/germany.png':
-        apiKey = 'b9269ed1c6d8495c9fe0b8c701b51c6b';
+        apiKey = Save.getStringData('germanyAPI');
         break;
       case 'assets/netherlands.png':
-        apiKey = '1915e6109adc4f3a8e4e7246b07dd028';
+        apiKey = Save.getStringData('netherlandsAPI');
         break;
       case 'assets/usa.png':
-        apiKey = '39c145edf6cb4a608c058a17afe26e60';
+        apiKey = Save.getStringData('usaAPI');
         break;
       default:
-        apiKey = '5167789e4b1745ba9062ab58aa152104';
+        apiKey = defaultApiKey;
         break;
     }
     emit(ChangApi());
     return apiKey!;
   }
 
-  String? country;
+  String ? country;
   String countries() {
     emit(ChangCountry());
     switch (pathToImage) {
@@ -187,13 +208,15 @@ class CubitClass extends Cubit<AppState> {
     try {
       emit(gettingData);
       return await DioHelper.getData('v2/top-headlines', {
-        "country": "nl",
+        "country": countries(),
         "category": category,
-        "apiKey": 'b9e87f4480504523ba978cbe75f016e1',
+        "apiKey": apiKeys,
       }).then((value) {
         if (value != null) {
           list?.clear();
           list?.addAll(value.data['articles']);
+          print(countries());
+          print(apiKeys());
           emit(getData);
         } else {
           emit(getDataError);
@@ -216,6 +239,7 @@ class CubitClass extends Cubit<AppState> {
     return await getNewsData('business', GettingBusinessData(),
         GetBusinessData(), GetDataBusinessError(), myBusiness);
   }
+
 
   Future<Response?> getNewsScienceData() async {
     return await getNewsData('science', GettingScienceData(), GetScienceData(),
@@ -243,12 +267,12 @@ class CubitClass extends Cubit<AppState> {
   }
 
   Future<Response?> getSearchData(
-    AppState gettingData,
-    AppState getData,
-    AppState getDataError,
-    List<dynamic>? list,
-    String q,
-  ) async {
+      AppState gettingData,
+      AppState getData,
+      AppState getDataError,
+      List<dynamic>? list,
+      String q,
+      ) async {
     try {
       list?.clear();
       emit(gettingData);

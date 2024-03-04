@@ -7,6 +7,7 @@ class BottomBarState extends AppState {}
 class GetBusinessData extends AppState {}
 class ChangCountry extends AppState {}
 class ChangApi extends AppState {}
+class ChangFlag extends AppState {}
 
 
 class GettingBusinessData extends AppState {}

@@ -2,8 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:untitled3/cubit/cubit.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:untitled3/cubit/states.dart';
+import 'package:untitled3/network/shared_preferencers.dart';
 
+import '../screens/flags.dart';
 import '../screens/search_screen.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
@@ -15,6 +18,7 @@ class HomeScreen extends StatelessWidget {
           CubitClass cub = CubitClass.get(context);
           return Scaffold(
             appBar: AppBar(
+              leading: const FlagMenu(),
               actions: [
                 IconButton(
                     onPressed: () {
@@ -23,8 +27,10 @@ class HomeScreen extends StatelessWidget {
                     icon: const Icon(
                       Icons.search,
                     )),
-                IconButton(onPressed: (){
-                  cub.isBrightness = !cub.isBrightness;
+                IconButton(
+                  onPressed: ()async{
+                  await  Save.setBoolData('key', !cub.isBrightness);
+                  cub.isBrightness = Save.getBoolData('key')!;
                 },
                   icon:  Icon(
                       cub.changeBrightnessIcon(cub.brightnessIcon)),)
