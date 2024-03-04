@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:conditional_builder_null_safety/conditional_builder_null_safety.dart';
 import 'package:untitled3/cubit/cubit.dart';
-import'package:url_launcher/url_launcher.dart';
-
+import 'package:url_launcher/url_launcher.dart';
 
 Widget itemBuilder(context, int index, List<dynamic>? list) {
   CubitClass cub = CubitClass.get(context);
@@ -36,9 +35,7 @@ Widget itemBuilder(context, int index, List<dynamic>? list) {
 
   return MaterialButton(
     onPressed: () {
-      
-   launchUrl(Uri.parse(url!));
-
+      launchUrl(Uri.parse(url!));
 
       // Navigator.push(
       //     context,
@@ -151,5 +148,45 @@ Widget titleAndDesc(String? str, int? maxLine, FontWeight fontWeight, context) {
       fontSize: 18,
       fontWeight: fontWeight,
     ),
+  );
+}
+
+Widget bodyBuilder(context) {
+  return Column(
+    children: [
+      flagBuilder(context, 'assets/belgium.png', 'Belgium'),
+      flagBuilder(context, 'assets/egypt.png', 'Egypt'),
+    ],
+  );
+}
+
+Widget flagBuilder(context, String pathToImage, String countryName) {
+  CubitClass cub = CubitClass.get(context);
+  return Column(
+    children: [
+      GestureDetector(
+        onTap: () {
+          cub.pathToImage = pathToImage;
+          cub.country = countryName;
+          Navigator.pop(context);
+        },
+        child: Row(
+          children: [
+            CircleAvatar(
+              radius: 10,
+              backgroundImage: AssetImage(pathToImage),
+              backgroundColor: Colors.transparent,
+              child: const CircleAvatar(
+                radius: 10,
+                backgroundColor: Colors.transparent,
+              ),
+            ),
+            const SizedBox(width: 10,),
+            Text(countryName,style: const TextStyle(fontSize: 18),)
+          ],
+        ),
+      ),
+      const Divider(height: 1,thickness: 1,color: Colors.black, endIndent: 200,indent: 200,)
+    ],
   );
 }

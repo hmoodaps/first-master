@@ -5,6 +5,9 @@ class InitialStat extends AppState {}
 class BottomBarState extends AppState {}
 
 class GetBusinessData extends AppState {}
+class ChangCountry extends AppState {}
+class ChangApi extends AppState {}
+
 
 class GettingBusinessData extends AppState {}
 

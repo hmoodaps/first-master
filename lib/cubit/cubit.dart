@@ -73,6 +73,9 @@ class CubitClass extends Cubit<AppState> {
     emit(ChangeBrightnessMod());
     return mod;
   }
+  changFlag(){
+
+  }
 
   // WebViewController controller(String url) {
   //   return WebViewController()..loadRequest(Uri.parse(url));
@@ -96,6 +99,7 @@ class CubitClass extends Cubit<AppState> {
     const Technology(),
     const Entertainment(),
   ];
+  String ? pathToImage ;
 
   List<BottomNavigationBarItem> items = [
     const BottomNavigationBarItem(
@@ -123,6 +127,60 @@ class CubitClass extends Cubit<AppState> {
       label: 'Entertainment',
     ),
   ];
+  String? apiKey;
+  String apiKeys() {
+    emit(ChangApi());
+    switch (pathToImage) {
+      case 'assets/belgium.png':
+        apiKey = '1915e6109adc4f3a8e4e7246b07dd028';
+        break;
+      case 'assets/egypt.png':
+        apiKey = '39c145edf6cb4a608c058a17afe26e60';
+        break;
+      case 'assets/germany.png':
+        apiKey = 'b9269ed1c6d8495c9fe0b8c701b51c6b';
+        break;
+      case 'assets/netherlands.png':
+        apiKey = '1915e6109adc4f3a8e4e7246b07dd028';
+        break;
+      case 'assets/usa.png':
+        apiKey = '39c145edf6cb4a608c058a17afe26e60';
+        break;
+      default:
+        apiKey = '5167789e4b1745ba9062ab58aa152104';
+        break;
+    }
+    emit(ChangApi());
+    return apiKey!;
+  }
+
+  String? country;
+  String countries() {
+    emit(ChangCountry());
+    switch (pathToImage) {
+      case 'assets/belgium.png':
+        country = 'be';
+        break;
+      case 'assets/egypt.png':
+        country = 'eg';
+        break;
+      case 'assets/germany.png':
+        country = 'de';
+        break;
+      case 'assets/netherlands.png':
+        country = 'nl';
+        break;
+      case 'assets/usa.png':
+        country = 'usa';
+        break;
+      default:
+        country = 'nl';
+        break;
+    }
+    emit(ChangCountry());
+    return country!;
+  }
+
 
   Future<Response?> getNewsData(String category, AppState gettingData,
       AppState getData, AppState getDataError, List<dynamic>? list) async {

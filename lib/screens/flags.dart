@@ -27,7 +27,6 @@ class FlagMenu extends StatelessWidget {
               height: 260,
             );
 
-            // Close the popover
           },
         );
       },
