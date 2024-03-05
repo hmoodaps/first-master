@@ -3,7 +3,6 @@ import 'package:untitled3/cubit/cubit.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:untitled3/cubit/states.dart';
 import 'package:untitled3/network/shared_preferencers.dart';
-
 import '../screens/flags.dart';
 import '../screens/search_screen.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -29,8 +28,12 @@ class HomeScreen extends StatelessWidget {
                     )),
                 IconButton(
                   onPressed: ()async{
-                  await  Save.setBoolData('key', !cub.isBrightness);
-                  cub.isBrightness = Save.getBoolData('key')!;
+                    await  Save.setBoolData('key', !cub.isBrightness);
+                    if(Save.getBoolData('key') != null) {
+                      cub.isBrightness = !cub.isBrightness ;
+                    } else {
+                      cub.isBrightness = Save.getBoolData('key')!;
+                    }
                 },
                   icon:  Icon(
                       cub.changeBrightnessIcon(cub.brightnessIcon)),)

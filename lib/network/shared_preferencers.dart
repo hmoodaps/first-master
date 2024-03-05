@@ -7,7 +7,7 @@ class Save{
     await Save.setStringData('egyptAPI', '39c145edf6cb4a608c058a17afe26e60');
     await Save.setStringData('germanyAPI', 'b9269ed1c6d8495c9fe0b8c701b51c6b');
     await Save.setStringData('netherlandsAPI', '1915e6109adc4f3a8e4e7246b07dd028');
-    await Save.setStringData('usaAPI', '1915e6109adc4f3a8e4e7246b07dd028');
+    await Save.setStringData('usaAPI' , '1915e6109adc4f3a8e4e7246b07dd028');
     await Save.setStringData('defaultApiKey', '5167789e4b1745ba9062ab58aa152104');
   }
   static Future<bool?> setBoolData(String key , bool value)async{

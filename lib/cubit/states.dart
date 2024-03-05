@@ -5,10 +5,14 @@ class InitialStat extends AppState {}
 class BottomBarState extends AppState {}
 
 class GetBusinessData extends AppState {}
+
 class ChangCountry extends AppState {}
+
 class ChangApi extends AppState {}
+
 class ChangFlag extends AppState {}
 
+class ChangeFlagsBackground extends AppState {}
 
 class GettingBusinessData extends AppState {}
 
@@ -65,4 +69,5 @@ class ChangeFieldsColor extends AppState {}
 class ChangeIconsColor extends AppState {}
 
 class OnChangeField extends AppState {}
+
 class ChangeFieldsBorderAndColor extends AppState {}

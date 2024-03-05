@@ -35,22 +35,48 @@ class CubitClass extends Cubit<AppState> {
     await Save.setStringData('usaAPI', api5);
     await Save.setStringData('defaultApiKey', api6);
   }
+  printting(){
+    print(countries());
+    print(apiKeys());
+  }
 
   changeBottomBar(int index) {
     currentIndex = index;
     emit(BottomBarState());
   }
-
+Color ? flagBackgroundColor ;
+  changeFlagsBackground(){
+    if(Save.getBoolData('key') == null){
+      isBrightness
+          ? flagBackgroundColor = Colors.grey : flagBackgroundColor = Colors.white;
+    }else{
+      Save.getBoolData('key')!
+           ? flagBackgroundColor = Colors.grey : flagBackgroundColor = Colors.white;
+    }
+    emit(ChangeFlagsBackground());
+    return flagBackgroundColor;
+  }
   changeBrightnessIcon(IconData? brightnessIcon) {
+    if(Save.getBoolData('key') == null){
+      isBrightness
+          ? brightnessIcon = brightnessIconDark
+        : brightnessIcon = brightnessIconLight;
+    }else{
     Save.getBoolData('key')!
         ? brightnessIcon = brightnessIconDark
         : brightnessIcon = brightnessIconLight;
+    }
     emit(ChangeBrightnessIcon());
     return brightnessIcon;
   }
 
   changeFontColor() {
-    Save.getBoolData('key')! ? fontColor = Colors.white : fontColor = Colors.black;
+    if(Save.getBoolData('key') == null){
+      isBrightness
+          ? fontColor = Colors.white : fontColor = Colors.black;
+    }else{
+      Save.getBoolData('key')! ? fontColor = Colors.white : fontColor = Colors.black;
+    }
     emit(ChangeFontColor());
     return fontColor;
   }
@@ -58,7 +84,10 @@ class CubitClass extends Cubit<AppState> {
   Color? iconColor;
 
   changeIconsColor() {
-    Save.getBoolData('key')! ? iconColor = Colors.black : iconColor = Colors.white;
+    if(Save.getBoolData('key') == null){
+      isBrightness
+      ? iconColor = Colors.black : iconColor = Colors.white;
+    }else{ Save.getBoolData('key')! ? iconColor = Colors.black : iconColor = Colors.white;}
     emit(ChangeIconsColor());
     return iconColor;
   }
@@ -66,19 +95,30 @@ class CubitClass extends Cubit<AppState> {
   Color? fieldColor;
 
   changeFieldsColor() {
-    Save.getBoolData('key')! ? fieldColor = Colors.white : fieldColor = Colors.black;
+    if(Save.getBoolData('key') == null){
+      isBrightness
+          ? fieldColor = Colors.white : fieldColor = Colors.black ;
+    }else{
+      Save.getBoolData('key')! ? fieldColor = Colors.white : fieldColor = Colors.black;
+    }
     emit(ChangeFieldsColor());
     return fieldColor;
   }
 
   changeFieldsBorderAndColor() {
-    Save.getBoolData('key')! ? fieldColor = Colors.red : fieldColor = Colors.orange;
+    if(Save.getBoolData('key') == null){
+      isBrightness
+          ? fieldColor = Colors.red : fieldColor = Colors.orange;
+    }else{ Save.getBoolData('key')! ? fieldColor = Colors.red : fieldColor = Colors.orange;}
     emit(ChangeFieldsBorderAndColor());
     return fieldColor;
   }
 
   changeDarkAndLightMod() {
-    Save.getBoolData('key')! ? mod = modDark : mod = modLight;
+    if(Save.getBoolData('key') == null){
+      isBrightness
+          ? mod = modDark : mod = modLight;
+    }else{ Save.getBoolData('key')! ? mod = modDark : mod = modLight;}
     emit(ChangeBrightnessMod());
     return mod;
   }
@@ -89,7 +129,7 @@ class CubitClass extends Cubit<AppState> {
       backgroundColor: Colors.transparent,
       child: CircleAvatar(
         radius: 20,
-        backgroundImage: AssetImage(Save.getStringData('pathToImage')!=null ? Save.getStringData('pathToImage')! : pathToImage ),
+        backgroundImage: AssetImage (Save.getStringData('pathToImage') != null ? Save.getStringData('pathToImage')! : pathToImage ),
         backgroundColor: Colors.transparent,
       ),
     );
@@ -148,7 +188,8 @@ class CubitClass extends Cubit<AppState> {
     ),
   ];
   String? apiKey;
-  String defaultApiKey = Save.getStringData('pathToImage') == null ? Save.getStringData('defaultApikey')! : '928a12e71c184dc8b8cfb085cb16e7ed';
+
+  // String defaultApiKey = Save.getStringData('pathToImage') == null ? '928a12e71c184dc8b8cfb085cb16e7ed' : Save.getStringData('defaultApikey')!;
 
   String apiKeys() {
     switch (Save.getStringData('pathToImage')) {
@@ -168,7 +209,7 @@ class CubitClass extends Cubit<AppState> {
         apiKey = Save.getStringData('usaAPI');
         break;
       default:
-        apiKey = defaultApiKey;
+        apiKey = Save.getStringData('defaultApikey');
         break;
     }
     emit(ChangApi());
@@ -215,8 +256,7 @@ class CubitClass extends Cubit<AppState> {
         if (value != null) {
           list?.clear();
           list?.addAll(value.data['articles']);
-          print(countries());
-          print(apiKeys());
+
           emit(getData);
         } else {
           emit(getDataError);

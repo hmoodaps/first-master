@@ -19,11 +19,10 @@ class FlagMenu extends StatelessWidget {
         return GestureDetector(
           child: cub.changFlag(),
           onTap: () async {
-            // Show popover
             await showPopover(
               context: context,
               bodyBuilder: (context) => bodyBuilder(context),
-              backgroundColor: Save.getBoolData('key')! ? Colors.grey : Colors.white,
+              backgroundColor: cub.changeFlagsBackground(),
               width: 200,
               height: 225,
             );
