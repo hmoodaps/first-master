@@ -224,22 +224,22 @@ class CubitClass extends Cubit<AppState> {
       label: 'Entertainment',
     ),
   ];
-  String apiKeys(country) {
-    String? apiKey;
-    switch (country) {
-      case 'Belgium':
+  String? apiKey;
+  String apiKeys(pathToImage) {
+    switch (pathToImage) {
+      case 'assets/belgium.png':
         apiKey = Save.getStringData('belgiumAPI');
         break;
-      case 'Egypt':
+      case 'assets/egypt.png':
         apiKey = Save.getStringData('egyptAPI');
         break;
-      case 'Germany':
+      case 'assets/germany.png':
         apiKey = Save.getStringData('germanyAPI');
         break;
-      case 'Netherlands':
+      case 'assets/netherlands.png':
         apiKey = Save.getStringData('netherlandsAPI');
         break;
-      case 'USA':
+      case 'assets/usa.png':
         apiKey = Save.getStringData('usAPI');
         break;
     }
@@ -248,6 +248,7 @@ class CubitClass extends Cubit<AppState> {
   }
 
   String countries(country) {
+    emit(ChangCountry());
     switch (country) {
       case 'Belgium':
         country = 'be';
