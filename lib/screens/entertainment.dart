@@ -12,10 +12,10 @@ class Entertainment extends StatelessWidget {
     return BlocConsumer<CubitClass, AppState>(
       listener: (context, state) {},
       builder: (context, state) {
-    CubitClass cubitClass =CubitClass.get(context);
-    List<dynamic>? list = cubitClass.myEntertainment;
-    return conditionalItemBuilder(context, list);
-    },
+        CubitClass cubitClass = CubitClass.get(context);
+        List<dynamic>? list = cubitClass.myEntertainment;
+        return conditionalItemBuilder(context, list);
+      },
     );
   }
 }

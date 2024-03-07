@@ -30,21 +30,19 @@ class Search extends StatelessWidget {
                 children: [
                   TextFormField(
                     maxLines: 1,
-                    onChanged: (searchWord
-                        ) {
+                    onChanged: (searchWord) {
                       cubitClass.getSearch(searchWord);
                       cubitClass.mySearch?.clear();
-
                     },
                     keyboardType: TextInputType.text,
                     maxLength: 50,
-                    style: TextStyle(color:cubitClass.changeIconsColor(),),
-                    onFieldSubmitted: (searchWord){
+                    style: TextStyle(
+                      color: cubitClass.changeIconsColor(),
+                    ),
+                    onFieldSubmitted: (searchWord) {
                       cubitClass.getSearch(searchWord);
                       cubitClass.mySearch?.clear();
-
                     },
-
                     decoration: InputDecoration(
                       hintText: 'Search',
                       prefixIcon: const Icon(Icons.search),
@@ -53,20 +51,22 @@ class Search extends StatelessWidget {
                       focusColor: cubitClass.changeFieldsColor(),
                       prefixIconColor: cubitClass.changeFieldsBorderAndColor(),
                       border: OutlineInputBorder(
-                        borderSide: BorderSide(color: cubitClass.changeFieldsBorderAndColor(),),
-                          borderRadius: BorderRadius.circular(10)
-                      ),
+                          borderSide: BorderSide(
+                            color: cubitClass.changeFieldsBorderAndColor(),
+                          ),
+                          borderRadius: BorderRadius.circular(10)),
                       counterText: '',
                       labelText: 'Search',
                       labelStyle: const TextStyle(color: Colors.red),
-
                     ),
                   ),
-                  const SizedBox(height: 15,),
-                  Expanded(child:
-                  cubitClass.mySearch!.isEmpty
-                      ? const Text('Nothing here')
-                      : conditionalSearchItemsBuilder(context, list)),
+                  const SizedBox(
+                    height: 15,
+                  ),
+                  Expanded(
+                      child: cubitClass.mySearch!.isEmpty
+                          ? const Text('Nothing here')
+                          : conditionalSearchItemsBuilder(context, list)),
                 ],
               ),
             ),

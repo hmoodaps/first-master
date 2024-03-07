@@ -13,7 +13,7 @@ class Sport extends StatelessWidget {
     return BlocConsumer<CubitClass, AppState>(
       listener: (context, state) {},
       builder: (context, state) {
-        CubitClass cubitClass =CubitClass.get(context);
+        CubitClass cubitClass = CubitClass.get(context);
         List<dynamic>? list = cubitClass.mySport;
         return conditionalItemBuilder(context, list);
       },

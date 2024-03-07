@@ -71,3 +71,5 @@ class ChangeIconsColor extends AppState {}
 class OnChangeField extends AppState {}
 
 class ChangeFieldsBorderAndColor extends AppState {}
+class IsFirstTimeSeen extends AppState {}
+class RefreshPage extends AppState {}

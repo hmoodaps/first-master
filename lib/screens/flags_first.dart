@@ -8,7 +8,8 @@ import '../cubit/states.dart';
 import '../network/shared_preferencers.dart';
 
 class FlagMenu extends StatelessWidget {
-  const FlagMenu({Key? key});
+  const FlagMenu({super.key});
+
 
   @override
   Widget build(BuildContext context) {
@@ -17,16 +18,15 @@ class FlagMenu extends StatelessWidget {
       builder: (context, state) {
         CubitClass cub = CubitClass.get(context);
         return GestureDetector(
-          child: cub.changFlag(),
+          child: cub.pathToImage ==null ? const Icon(Icons.arrow_drop_down_circle):cub.changFlag(),
           onTap: () async {
             await showPopover(
               context: context,
               bodyBuilder: (context) => bodyBuilder(context),
               backgroundColor: cub.changeFlagsBackground(),
               width: 200,
-              height: 225,
+              height: 247,
             );
-
           },
         );
       },

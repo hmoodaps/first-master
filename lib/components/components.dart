@@ -5,6 +5,8 @@ import 'package:untitled3/main.dart';
 import 'package:untitled3/network/shared_preferencers.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import '../home/home_screen.dart';
+
 Widget itemBuilder(context, int index, List<dynamic>? list) {
   CubitClass cub = CubitClass.get(context);
   String? title = list?[index]['title'];
@@ -65,7 +67,7 @@ Widget itemBuilder(context, int index, List<dynamic>? list) {
                     child: Image.network(
                       list?[index]['urlToImage'] != null
                           ? '${list?[index]['urlToImage']}'
-                          : "https://i.pinimg.com/originals/76/27/af/7627af55c627e7f6b60880f1a684cd77.jpg",
+                          : pathToImage(context),
                       fit: BoxFit.cover,
                     ),
                   ),
@@ -154,8 +156,9 @@ Widget titleAndDesc(String? str, int? maxLine, FontWeight fontWeight, context) {
 }
 
 Widget bodyBuilder(context) {
-  return Column(
+  return  Column(
     children: [
+      const Text('==Select one =='),
       flagBuilder(context, 'assets/belgium.png', 'Belgium'),
       flagBuilder(context, 'assets/egypt.png', 'Egypt'),
       flagBuilder(context, 'assets/netherlands.png', 'Netherlands'),
@@ -164,6 +167,7 @@ Widget bodyBuilder(context) {
     ],
   );
 }
+
 
 Widget flagBuilder(context, String pathToImage, String countryName) {
   CubitClass cub = CubitClass.get(context);
@@ -174,29 +178,91 @@ Widget flagBuilder(context, String pathToImage, String countryName) {
           Save.setStringData('pathToImage', pathToImage);
           cub.pathToImage = Save.getStringData('pathToImage')!;
           Save.setStringData('countryName', countryName);
-          cub.country = Save.getStringData('countryName')!;
+
           Navigator.pop(context);
-          Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const MyApp(),));
+          if(cub.isFirstTime == false){
+            null;
+          }else{
+            Navigator.pop(context);
+            Navigator.push(context, MaterialPageRoute(builder: (context)=> HomeScreen(
+              cub
+              ..getNewsSportData()
+              ..getNewsScienceData()
+              ..getNewsHealthData()
+              ..getNewsTechnologyData()
+              ..getNewsEntertainmentData()
+              ..getNewsBusinessData()
+              ..apis('1915e6109adc4f3a8e4e7246b07dd028', '39c145edf6cb4a608c058a17afe26e60', 'b9269ed1c6d8495c9fe0b8c701b51c6b',
+                  '928a12e71c184dc8b8cfb085cb16e7ed', 'ffdf74f7a67a456b8d32cb7f6c87a171', '5167789e4b1745ba9062ab58aa152104'),)));
+          }
         },
         child: Row(
           children: [
             CircleAvatar(
-            radius: 15,
-            backgroundColor: Colors.transparent,
+              radius: 15,
+              backgroundColor: Colors.transparent,
               child: CircleAvatar(
                 radius: 15,
                 backgroundImage: AssetImage(pathToImage),
                 backgroundColor: Colors.transparent,
               ),
-          ),
-            const SizedBox(width: 10,),
-            SizedBox(width : 157 ,child: Text(countryName,style: const TextStyle(fontSize: 18),))
+            ),
+            const SizedBox(
+              width: 10,
+            ),
+            SizedBox(
+                width: 157,
+                child: Text(
+                  countryName,
+                  style: const TextStyle(fontSize: 18),
+                ))
           ],
         ),
       ),
-      const SizedBox(height: 7,),
-      const Divider(height: 1,thickness: 1,color: Colors.black,),
-      const SizedBox(height: 7,),
+      const SizedBox(
+        height: 7,
+      ),
+      const Divider(
+        height: 1,
+        thickness: 1,
+        color: Colors.black,
+      ),
+      const SizedBox(
+        height: 7,
+      ),
     ],
   );
+}
+
+
+String pathToImage(context) {
+  CubitClass cub = CubitClass.get(context);
+  String? pathTOImage;
+  switch (Save.getStringData("countryName")) {
+    case 'Belgium':
+      pathTOImage =
+          'https://www.annaharar.com/ContentFiles/186984Image1-1180x677_d.jpg?version=3976437';
+      break;
+    case 'Egypt':
+      pathTOImage =
+          'https://cdn.alweb.com/thumbs/egyptencyclopedia/article/fit710x532/%D8%A7%D8%B9%D8%B1%D9%81-%D8%A3%D9%83%D8%AB%D8%B1-%D8%B9%D9%86-%D8%AC%D9%85%D9%87%D9%88%D8%B1%D9%8A%D8%A9-%D9%85%D8%B5%D8%B1-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9.jpg';
+      break;
+    case 'Germany':
+      pathTOImage =
+          'https://images.pexels.com/photos/109629/pexels-photo-109629.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1';
+      break;
+    case 'Netherlands':
+      pathTOImage =
+          'https://i.pinimg.com/originals/76/27/af/7627af55c627e7f6b60880f1a684cd77.jpg';
+      break;
+    case 'USA':
+      pathTOImage =
+          'https://media.gemini.media/img/original/2019/8/6/2019_8_6_11_32_15_497.jpg';
+      break;
+    default:
+      pathTOImage =
+          'https://i.pinimg.com/originals/76/27/af/7627af55c627e7f6b60880f1a684cd77.jpg';
+      break;
+  }
+  return pathTOImage;
 }

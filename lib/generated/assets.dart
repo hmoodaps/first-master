@@ -19,5 +19,4 @@ class Assets {
   static const String screensSports = 'lib/screens/sports.dart';
   static const String screensTechnology = 'lib/screens/technology.dart';
   static const String settingSettings = 'lib/setting/settings.dart';
-
 }

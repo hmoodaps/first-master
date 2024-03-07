@@ -52,7 +52,8 @@ dev_dependencies:
   webview_flutter: ^4.7.0
   url_launcher: ^6.2.5
   popover : ^0.3.0
-
+  whatsapp_sender_flutter: ^0.2.0
+  whatsapp: ^2.0.0
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is

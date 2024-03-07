@@ -4,34 +4,34 @@ import 'package:untitled3/network/dio.dart';
 import 'package:untitled3/home/home_screen.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:untitled3/network/shared_preferencers.dart';
+import 'package:untitled3/screens/first_page.dart';
 import 'cubit/cubit.dart';
 import 'cubit/states.dart';
 
-void main() async{
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   DioHelper.init();
   await Save.init();
 
-  runApp( const MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
-   const MyApp({super.key});
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-        create: (context) =>
-        CubitClass()
+        create: (context) => CubitClass()
           ..getNewsSportData()
           ..getNewsScienceData()
           ..getNewsHealthData()
           ..getNewsTechnologyData()
           ..getNewsEntertainmentData()
-          ..getNewsBusinessData()
-           ..apis('1915e6109adc4f3a8e4e7246b07dd028','39c145edf6cb4a608c058a17afe26e60',
-               'b9269ed1c6d8495c9fe0b8c701b51c6b','1915e6109adc4f3a8e4e7246b07dd028',
-               '1915e6109adc4f3a8e4e7246b07dd028','5167789e4b1745ba9062ab58aa152104'),
+          ..getNewsBusinessData(),
+        // ..apis('1915e6109adc4f3a8e4e7246b07dd028','426e01c5d1034007aebc8dc30834f142',
+        //     '426e01c5d1034007aebc8dc30834f142','426e01c5d1034007aebc8dc30834f142',
+        //     '426e01c5d1034007aebc8dc30834f142','426e01c5d1034007aebc8dc30834f142'),
         // {
         //   CubitClass cubit = CubitClass();
         //   cubit.getNewsSportData();
@@ -66,19 +66,18 @@ class MyApp extends StatelessWidget {
                   backgroundColor: Colors.white,
                   shadowColor: Colors.black,
                   appBarTheme: const AppBarTheme(
-                      systemOverlayStyle: SystemUiOverlayStyle(
+                    systemOverlayStyle: SystemUiOverlayStyle(
                         statusBarBrightness: Brightness.dark,
                         statusBarIconBrightness: Brightness.dark,
                         statusBarColor: Colors.white,
-                        systemStatusBarContrastEnforced: true
-                      ),
-                      backgroundColor: Colors.white,
-                      centerTitle: true,
-                      iconTheme: IconThemeData(color: Colors.black),
-                    titleTextStyle: TextStyle(color:Colors.black,
+                        systemStatusBarContrastEnforced: true),
+                    backgroundColor: Colors.white,
+                    centerTitle: true,
+                    iconTheme: IconThemeData(color: Colors.black),
+                    titleTextStyle: TextStyle(
+                      color: Colors.black,
                       fontSize: 28,
                     ),
-
                   ),
                 ),
                 darkTheme: ThemeData(
@@ -89,24 +88,23 @@ class MyApp extends StatelessWidget {
                     unselectedItemColor: Colors.white38,
                     selectedIconTheme: IconThemeData(color: Colors.white),
                     backgroundColor: Colors.black,
-
                   ),
                   backgroundColor: Colors.white54,
                   shadowColor: Colors.white,
                   appBarTheme: const AppBarTheme(
-                      systemOverlayStyle: SystemUiOverlayStyle(
-                        statusBarBrightness: Brightness.light,
-                        statusBarIconBrightness: Brightness.light,
-                        statusBarColor: Colors.black,
-                      ),
-                      shadowColor: Colors.white,
-                      backgroundColor: Colors.black,
-                      centerTitle: true,
-                      iconTheme: IconThemeData(color: Colors.white),
-                      titleTextStyle: TextStyle(color:Colors.white,
-                        fontSize: 28,
+                    systemOverlayStyle: SystemUiOverlayStyle(
+                      statusBarBrightness: Brightness.light,
+                      statusBarIconBrightness: Brightness.light,
+                      statusBarColor: Colors.black,
                     ),
-
+                    shadowColor: Colors.white,
+                    backgroundColor: Colors.black,
+                    centerTitle: true,
+                    iconTheme: IconThemeData(color: Colors.white),
+                    titleTextStyle: TextStyle(
+                      color: Colors.white,
+                      fontSize: 28,
+                    ),
                   ),
                   scaffoldBackgroundColor: Colors.white54,
                   textTheme: const TextTheme(
@@ -114,7 +112,16 @@ class MyApp extends StatelessWidget {
                   ),
                 ),
                 themeMode: cub.changeDarkAndLightMod(),
-                home: const HomeScreen(),
+                home: cub.isFirstTime == true ?   HomeScreen(
+                    cub ..getNewsSportData()
+                       ..getNewsScienceData()
+                      ..getNewsHealthData()
+                      ..getNewsTechnologyData()
+                      ..getNewsEntertainmentData()
+                      ..getNewsBusinessData()
+                      ..apis('1915e6109adc4f3a8e4e7246b07dd028', '39c145edf6cb4a608c058a17afe26e60', 'b9269ed1c6d8495c9fe0b8c701b51c6b',
+                          '928a12e71c184dc8b8cfb085cb16e7ed', 'ffdf74f7a67a456b8d32cb7f6c87a171', '5167789e4b1745ba9062ab58aa152104'),
+                ) : const FirstPage()
               );
             }));
   }
